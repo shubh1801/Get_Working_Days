@@ -1,0 +1,21 @@
+Reusable code to calculate and a date after certain working days from current date.
+
+While calculating date, process ignores 
+
+1) Week OFF "Saturday and Sunday" (or day of week pass as input argument "in_strWeekOffDays" )
+
+2) Holiday Dates passes in "MM/dd" format as comma separated String to input argument "in_strHolidayDates"
+
+	note: if Holiday dates are year specific then please pass date in string as "MM/dd/yyyy" format 
+
+
+
+Input Arguments: 
+
+1)  in_intWokingDaysCount (int) - input of no. of day's date need.
+
+2) in_strWeekOffDays (String) - comma separated values of days of week which are to be considered as non-working days  eg: "Saturday,Sunday"
+
+3) in_strHolidayDates (String) - comma separated values of Date's which are to be considered as to be holiday eg: "07/04,08/15,01/18/2018"
+
+4) out_dateAfterWorkingDays (String) - Date in "MM/dd/yyyy" format after "x" working days from current date
